@@ -1,24 +1,74 @@
-.header {
+/* HEADER WRAPPER */
+.header{
+  position: sticky;   /* תשאיר רק את זה */
+  top: 0;
+  z-index: 1000;
+
   display: flex;
-  position: sticky;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   background: var(--card-bg);
   border-bottom: var(--border);
-  padding: 10px;
+  padding: 20px 16px;
+
+  box-sizing: border-box;
 }
 
-.hamburger {
+
+/* HAMBURGER – בצד ימין */
+.hamburger{
   background: none;
   border: none;
   color: var(--text);
   font-size: 2rem;
   cursor: pointer;
+  line-height: 1;
+  z-index: 2; /* מעל האווטאר אם חופף */
 }
 
-.header-avatar {
-  width: 40px;
-  height: 40px;
+/* TITLE – תמיד ממורכז למסך */
+.main-title{
+  position: absolute;      /* נמרכז יחסית ל-header */
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  display: flex; gap: 8px; align-items: center;
+  color: var(--text);
+  text-align: center;
+  pointer-events: none;     /* שלא יחסום לחיצות על המבורגר/אווטאר אם חופף */
+}
+
+/* AVATAR – חצי בפנים, חצי בולט למטה בצד שמאל */
+.header-avatar{
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   object-fit: cover;
+
+  position: absolute;
+  top: 10px;
+  right:  10px;          /* בצד שמאל */
+  bottom: -80px;       /* חצי גובה החוצה */
+  border: 4px solid var(--card-bg);
+  box-shadow: var(--shadow);
+  z-index: 1;
+}
+
+.fullscreen-btn{
+  background: none;
+  border: 1px solid transparent;
+  color: var(--text);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+.fullscreen-btn:hover{
+  border-color: #2d2d2d;
+}
+
+/* אופציונלי: ברזולוציות קטנות להקטין טיפה */
+@media (max-width: 520px){
+  .header-avatar{ width: 120px; height: 120px; bottom: -60px; }
+  .hamburger{ font-size: 1.6rem; }
 }

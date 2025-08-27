@@ -1,14 +1,17 @@
 import "../styles/title.css";
 
 interface TitleProps {
-  text: string;
-  emoji: string;
+  leftText: string;
+  rightText: string;
+  logo: string;
 }
 
-export default function Title({ text, emoji }: TitleProps) {
+export default function Title({ leftText, rightText, logo }: TitleProps) {
   return (
     <h1 className="main-title">
-       {text} {emoji}
+      <span className="title-left">{leftText}</span>
+      <img src={logo} alt="logo" className="title-logo" />
+      <span className="title-right">{rightText}</span>
     </h1>
   );
 }

@@ -8,10 +8,14 @@
   width: auto;
   min-width: 220px;
   background: var(--card-bg);
+
+  position: relative;   /* כדי שהכפתור יתמקם ביחס לכרטיס */
+  padding-bottom: 60px; /* משאיר מקום לכפתור שלא יכסו טקסט */
 }
+
 .avatar{
-  width: 80px; height: 80px; border-radius: 50%;
-  object-fit: cover; margin-bottom: 12px;
+  width: 120px; height: 120px; border-radius: 50%;
+  object-fit: cover; margin-bottom: 6px;
 }
-.name{ font-weight: 700; margin: 8px 0; color: var(--text); }
-.description{ color: var(--muted); margin-bottom: 12px; }
+.name{ font-weight: 700; margin: 0px 0; color: var(--text); }
+.description{ color: var(--muted); margin-bottom: 6px; direction: rtl; }

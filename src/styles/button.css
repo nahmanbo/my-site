@@ -1,4 +1,9 @@
 .btn{
+  position: absolute;
+  bottom: 16px;         /* מרחק קבוע מתחתית האב */
+  left: 50%;            /* מרכז אופקית */
+  transform: translateX(-50%);
+
   background: var(--brand);
   color: #fff;
   border: none;
@@ -8,4 +13,6 @@
   box-shadow: var(--shadow);
   transition: background .2s;
 }
-.btn:hover{ background: var(--brand-hover); }
+.btn:hover{
+  background: var(--brand-hover);
+}

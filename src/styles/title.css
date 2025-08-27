@@ -1,16 +1,20 @@
 .main-title {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  color: var(--text);     
-  margin: 1px 0;
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 12px;               
+  justify-content: center;
+  gap: 12px;        /* רווח בין טקסט ללוגו */
+  margin: 0;
+  color: var(--text);
+  font-size: 1.8rem;
 }
 
-.main-title .emoji {
-  font-size: 3.2rem;
-  line-height: 1;
+.title-logo {
+  width: 50px;      /* גודל הלוגו */
+  height: 50px;
+  object-fit: contain;
+}
+
+.title-left,
+.title-right {
+  font-weight: bold;
 }
