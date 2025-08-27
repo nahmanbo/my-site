@@ -10,7 +10,7 @@ import firstDate from "./assets/image/firstDate.png";
 import fourthDate from "./assets/image/fourthtDate.jpg";
 import flowers from "./assets/image/PHOTO-2025-08-22-14-19-04.jpg"
 import kisses from "./assets/image/IMG_C805BB33A4A4-1.jpeg"
-import imgA from "./assets/image/IMG_8636.JPG";
+import imgA from "./assets/image/myLove.jpg";
 import past from "./assets/image/IMG_AD096E1702AA-1.jpeg"
 import whiteHeart from "./assets/image/white_heart.png"
 
