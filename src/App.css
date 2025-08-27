@@ -1,0 +1,44 @@
+:root{
+  /* צבעים */
+  --bg: #242424;;            /* רקע כללי */
+  --card-bg: #1e1e1e;       /* רקע כרטיסים / Navbar / Footer */
+  --text: #e5e7eb;          /* טקסט ראשי */
+  --muted: #9ca3af;         /* טקסט משני */
+  --brand: #3b82f6;         /* כחול */
+  --brand-hover: #2563eb;   /* כחול כהה יותר */
+
+  /* עיצוב כללי */
+  --radius: 12px;
+  --shadow: 0 4px 14px rgba(0,0,0,0.6);
+  --border: 1px solid #2d2d2d;
+}
+/* Reset בסיסי לכל האלמנטים */
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+#root {
+  height: 100%;       /* מספיק לגדול לפי המסך */
+  width: 100%;
+  max-width: none;    /* אל תגבול ברוחב */
+  margin: 0;          /* מבטל את ה-centering */
+  text-align: center;
+}
+
+.header {
+  width: 100%;        /* ייקח את כל הרוחב */
+  top: 0;
+  left: 0;
+}

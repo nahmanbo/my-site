@@ -1,0 +1,16 @@
+.main-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--text);     
+  margin: 1px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;               
+}
+
+.main-title .emoji {
+  font-size: 3.2rem;
+  line-height: 1;
+}
