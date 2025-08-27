@@ -7,15 +7,12 @@ import ProfileCard from "./components/ProfileCard";
 import ProfileContainer from "./components/ProfileContainer";
 import FullscreenButton from "./components/FullscreenButton";
 import firstDate from "./assets/image/firstDate.png";
-import fourthDate from "./assets/image/fourthtDate.jpg";
-import flowers from "./assets/image/PHOTO-2025-08-22-14-19-04.jpg"
-import kisses from "./assets/image/IMG_C805BB33A4A4-1.jpeg"
+import fourthDate from "./assets/image/fourthDate.jpg"; // ← תוקן: בלי ה-t המיותרת
+import flowers from "./assets/image/PHOTO-2025-08-22-14-19-04.jpg";
+import kisses from "./assets/image/IMG_C805BB33A4A4-1.jpeg";
 import imgA from "./assets/image/myLove.jpg";
-import past from "./assets/image/IMG_AD096E1702AA-1.jpeg"
-import whiteHeart from "./assets/image/white_heart.png"
-
-
-
+import past from "./assets/image/IMG_AD096E1702AA-1.jpeg";
+import whiteHeart from "./assets/image/white_heart.png";
 
 const memories = [
   {
@@ -43,9 +40,8 @@ const memories = [
   התכרבלנו מול האח הגדול,
   וסיימנו בלילה מתוק של שמירת נגיעה 🤣.`
   },
-  
   {
-    avatar: fourthDate, 
+    avatar: fourthDate,
     name: "הדייט הרביעי",
     description: `פתחנו בערב סטנדאפ קורע של בן בן ברוך,
   המשכנו לאוכל במסעדה עם קינוחים שגמרו לנו על הבריאות,
@@ -53,20 +49,18 @@ const memories = [
   וסיימנו במסאז' תמים שסגר לילה מושלם.`
   },
   {
-    avatar: flowers, 
+    avatar: flowers,
     name: "הפרחים שלי",
     description: `כל פעם שאיחרת לדייט – חיכה לך זר פרחים. תמיד הכי יפה שאני מוצא,
   ואפילו כשכמעט התבאסת שלא שלחתי… הם בסוף הגיעו לחבק את הלב.`
   },
-  
   {
-    avatar: kisses, 
+    avatar: kisses,
     name: "הנשיקות שלך",
     description: `כל פעם שהתגעגעתי – חיכתה לי נשיקה שלך במכתב.
   תמיד מלאה ברגש, תמיד הכי מתוק שיש,
   ואפילו כשלא היית לידי היא הצליחה לחבק את הלב.`
   },
-  
   {
     avatar: past,
     name: "העבר שלנו",
@@ -75,7 +69,6 @@ const memories = [
   כשאני עמדתי לוותר את בחרת להישאר.
   הלב שלך החזיק בי, והלב שלי למד לאחוז בחזרה... והוא לא ישחרר אף פעם.`
   },
-  
   {
     avatar: "https://onlife.co.il/wp-content/uploads/2019/04/family-1517192_1920.jpg",
     name: "העתיד שלנו",
@@ -91,8 +84,7 @@ export default function App() {
     <>
       <Header>
         <Avatar src={imgA} />
-
-        <Title leftText="נחמן" logo={whiteHeart} rightText="סיפור האהבה של רעות"/>
+        <Title leftText="נחמן" logo={whiteHeart} rightText="סיפור האהבה של רעות" />
         <FullscreenButton />
         <HamburgerButton />
       </Header>
