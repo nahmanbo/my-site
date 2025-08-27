@@ -7,7 +7,7 @@ import ProfileCard from "./components/ProfileCard";
 import ProfileContainer from "./components/ProfileContainer";
 import FullscreenButton from "./components/FullscreenButton";
 import firstDate from "./assets/image/firstDate.png";
-import fourthDate from "./assets/image/fourthDate.jpg"; // ← תוקן: בלי ה-t המיותרת
+import fourthDate2 from "./assets/image/fourthDate.png";
 import flowers from "./assets/image/PHOTO-2025-08-22-14-19-04.jpg";
 import kisses from "./assets/image/IMG_C805BB33A4A4-1.jpeg";
 import imgA from "./assets/image/myLove.jpg";
@@ -41,7 +41,7 @@ const memories = [
   וסיימנו בלילה מתוק של שמירת נגיעה 🤣.`
   },
   {
-    avatar: fourthDate,
+    avatar: fourthDate2,
     name: "הדייט הרביעי",
     description: `פתחנו בערב סטנדאפ קורע של בן בן ברוך,
   המשכנו לאוכל במסעדה עם קינוחים שגמרו לנו על הבריאות,
